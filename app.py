@@ -44,7 +44,7 @@ def get_credentials(region):
 
 def get_jwt_token(region):
     uid, password = get_credentials(region)
-    jwt_url = f"https://aditya-jwt-v11op.onrender.com/token?uid={uid}&password={password}"
+    jwt_url = f"https://jwt-gen-api-v2.onrender.com/token?uid={uid}&password={password}"
     
     response = requests.get(jwt_url)
     if response.status_code != 200:
